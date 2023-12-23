@@ -1,6 +1,6 @@
 #!/bin/bash
 tmux_config="${XDG_CONFIG_HOME:-$HOME}/.tmux.conf"
-tmux_start_script="${XDG_CONFIG_HOME:-$HOME}/.local/bin/tmux-session.sh"
+tmux_start_script="${XDG_CONFIG_HOME:-$HOME}/.local/bin/tmux.sh"
 
 # Check if the file already exists
 if [ -f "$tmux_config" ]; then
