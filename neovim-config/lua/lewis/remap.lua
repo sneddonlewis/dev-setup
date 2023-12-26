@@ -35,10 +35,3 @@ vim.keymap.set("n", "<C-c>", "<Esc>")
 
 -- don't let me accidentally press 'Q' ever
 vim.keymap.set("n", "Q", "<nop>")
-
--- [[ LSP ]]
-
--- Find All References
-vim.keymap.set('n', '<leader>fr', ':lua vim.lsp.buf.references()<CR>', {
-	silent = true, noremap = true
-})
