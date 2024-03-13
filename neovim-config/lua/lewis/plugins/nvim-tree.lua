@@ -15,6 +15,11 @@ return {
     vim.api.nvim_set_keymap('n', '<leader>tt', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
     vim.api.nvim_set_keymap('n', '<leader>tf', ':NvimTreeFocus<CR>', { noremap = true, silent = true })
 
-    require("nvim-tree").setup {}
+    require("nvim-tree").setup {
+      view = {
+        width = 45,
+        side = "left",
+      },
+    }
   end,
 }
