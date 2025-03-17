@@ -60,6 +60,11 @@ return {
               return
             end
 
+            -- Disable autoformat for SQL files
+            if vim.bo.filetype == 'sql' then
+              return
+            end
+
             vim.lsp.buf.format {
               async = false,
               filter = function(c)
