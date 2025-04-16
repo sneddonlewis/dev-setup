@@ -20,6 +20,10 @@ return {
         width = 45,
         side = "left",
       },
+      filters = {
+        dotfiles = false,
+        git_ignored = false,
+      },
     }
   end,
 }
